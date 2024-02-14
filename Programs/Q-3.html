@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let arr_num = [];
+        let inp1 = prompt("enter any numbers,sperated by comma:");
+        let inp_value = inp1.split(",");
+
+        inp_value.forEach(function (inp1) {
+            let numeric_value = parseFloat(inp1)
+            arr_num.push(numeric_value);
+        })
+        document.writeln("<br>array with forEach is : ", arr_num);
+
+        let strg = arr_num.toString();
+        document.writeln("<br>array after string is : ", strg);
+        document.writeln("<br>array after using typeof to find := ",typeof(strg));
+
+        let join_strg = arr_num.join("$");
+        document.writeln("<br>array after join is : ", join_strg);
+
+    </script>
+</body>
+
+</html>
